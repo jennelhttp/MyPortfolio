@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JENNEL | PORTFOLIO</title>
+
+    <!-- BOOTSTRAP 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+
+<body class="bg-white text-dark">
+
+   <!-- NAVBAR -->
+   <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+  <div class="container">
+
+    <!-- LOGO -->
+    <a class="navbar-brand fw-bold" href="index.html">Portfolio</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- NAV LINKS -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav text-start text-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link d-inline-flex align-items-center"
+             href="index.html">
+            <i data-lucide="home" class="me-1"></i>
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link d-inline-flex align-items-center"
+             href="#projects">
+            <i data-lucide="folder-open-dot" class="me-1"></i>
+            Projects
+          </a>
+        </li>
+        
+         <li class="nav-item">
+          <a class="nav-link d-inline-flex align-items-center"
+             href="#designs">
+            <i data-lucide="code"></i>  
+            Designs
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link d-inline-flex align-items-center"
+             href="about/about.html">
+            <i data-lucide="user" class="me-1"></i>
+            About
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link d-inline-flex align-items-center active"
+             href="contact/contact.html">
+            <i data-lucide="headset" class="me-1"></i>
+            Contact
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+   <!-- HERO SECTION -->
+<section id="hero" class="py-5">
+  <div class="container text-center">
+
+    <!-- IMAGE -->
+    <div class="mb-4">
+      <img 
+        src="img/main.jpg" 
+        alt="Profile"
+        class="rounded-circle border"
+        style="width: 160px; height: 160px; object-fit: cover;"
+      >
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center gap-2 mb-2">
+  <span class="hello-line"></span>
+  <span class="text-muted">Hello</span>
+  <span class="hello-line"></span>
+</div>
+
+    <h1 class="fw-bold mb-3">
+      I'm <span style="color: brown; ">Jennel </span> S. Tengcang<br>
+     Potential Front-End Developer
+    </h1>
+
+    <p class="text-muted mx-auto mb-4" style="max-width: 520px;">
+      I build clean, responsive, and user-friendly web UI/UX with modern technologies
+    </p>
+
+    <!-- SOCIAL ACCOUNTS -->
+    <div class="d-flex justify-content-center gap-3">
+      <a href="https://github.com/jennelhttp" class="text-dark fs-4">
+        <i data-lucide="github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/jennel-tengcang-10b36b359?trk=contact-info" class="text-dark fs-4">
+        <i data-lucide="linkedin"></i>
+      </a>
+      <a href="mailto:sc.jennel.tengcang@cvsu.edu.ph" class="text-dark fs-4">
+        <i data-lucide="mail"></i>
+      </a>
+      <a href="tel:+639928632224" class="text-dark fs-4">
+        <i data-lucide="send"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+   <!-- PROJECT SECTION START -->   
+<section id="projects" class="projects py-5">
+  <div class="container">
+    <h1 class="text-center text-black">MY PROJECTS</h1>
+    <h6 class="subheading text-center text-dark mb-4">Click Image to Enlarge</h6>
+
+    
+    <div class="row g-4 justify-content-center">
+      <!-- PROJECT 1 -->
+      <div class="col-md-6">
+        <div class="project text-center">
+          <img src="img/proj1.png" class="img-fluid project-image" alt="PET SHOP"
+               data-bs-toggle="modal" data-bs-target="#projectModal"
+               data-title="PET SHOP" data-desc="A Pet Shop management system developed as part of our DCIT55 project."
+               data-images='["img/petshop1.jpg","img/petshop2.jpg"]'>
+          <p class="category mt-2">DCIT55 PROJECT</p>
+          <h4>PET SHOP WEBSITE</h4>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="col-md-6">
+        <div class="project text-center">
+          <img src="img/proj2.png" class="img-fluid project-image" alt="GAME SCRATCH"
+               data-bs-toggle="modal" data-bs-target="#projectModal"
+               data-title="GAME SCRATCH" data-desc="An interactive game developed using Scratch for our ITEC60 activity."
+               data-images='["img/proj2.png"]'>
+          <p class="category mt-2">ITEC60 ACTIVITY</p>
+          <h4>GAME SCRATCH</h4>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="col-md-6">
+        <div class="project text-center">
+          <img src="img/solana.jpg" class="img-fluid project-image" alt="DICTIONARY"
+               data-bs-toggle="modal" data-bs-target="#projectModal"
+               data-title="DICTIONARY" data-desc="A dictionary where all of the terminologies in ITEC60 is there."
+               data-images='["img/solana.jpg","img/solana1.jpg","img/solana2.jpg","img/solana3.jpg","img/solana4.jpg","img/solana5.jpg"]'>
+          <p class="category mt-2">ITEC106 PROJECT</p>
+          <h4>SOLANA VIERRA E-COMMERCE WEBSITE</h4>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="col-md-6">
+        <div class="project text-center">
+          <img src="img/proj4.png" class="img-fluid project-image" alt="GYMRAT WEBSITE"
+               data-bs-toggle="modal" data-bs-target="#projectModal"
+               data-title="GYMRAT WEBSITE" data-desc="A fitness website created as part of the DCIT24 curriculum."
+               data-images='["img/gym1.jpg","img/gym2.jpg"]'>
+          <p class="category mt-2">DCIT24 PROJECT</p>
+          <h4>GYMRAT WEBSITE</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="projectModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Project Title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" class="img-fluid" alt="">
+          <p id="modalDescription" class="mt-3"></p>
+          <div class="mt-3">
+            <button class="btn btn-secondary me-2" id="prevImage">Previous</button>
+            <button class="btn btn-secondary" id="nextImage">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- PROJECT SECTION END -->
+
+   
+   
+   <!-- DESIGNS SECTION START -->
+<section id="designs" class="designs py-5">
+  <div class="container">
+    <h1 class="text-center text-black">MY DESIGNS</h1>
+    <h6 class="subheading text-center text-dark mb-5">
+      UI • GRAPHIC DESIGNS • DIGITAL ART
+    </h6>
+
+    <div class="row g-4 justify-content-center">
+      <!-- DESIGN 1 -->
+      <div class="col-md-4">
+        <div class="design-card text-center">
+          <img src="img/design1.jpeg" class="img-fluid design-image" alt="Landing Page Design">
+          <p class="category mt-3">GRAPHIC DESIGN</p>
+          <h4>Poster Design Using Canva</h4>
+        </div>
+      </div>
+
+      <!-- DESIGN 2 -->
+      <div class="col-md-4">
+        <div class="design-card text-center">
+          <img src="img/design2.jpg" class="img-fluid design-image" alt="Dashboard Design">
+          <p class="category mt-3">DIGITAL ARTWORK</p>
+          <h4>Digital Art Using Adobe Photoshop</h4>
+        </div>
+      </div>
+
+      <!-- DESIGN 3 -->
+      <div class="col-md-4">
+        <div class="design-card text-center">
+          <img src="img/design3.jpg" class="img-fluid design-image" alt="Mobile App UI">
+          <p class="category mt-3">UI PROTOTYPE</p>
+          <h4>Mobile Bank App Prototype Using Canva</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- DESIGNS SECTION END -->
+
+   
+   
+    
+
+    
+    <!-- ACHIEVEMENTS SECTION START -->
+<section id="achievements" class="achievements py-5">        
+    <h1 class="text-center text-black">MY ACHIEVEMENTS</h1>
+    <h6 class="subheading text-center text-dark">Certificate & Badge</h6>
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- CERTIFICATE -->
+            <div class="col-12 col-md-5 mb-4">
+                <div class="achievement-card glassmorphism">
+                    <img src="img/certi.jpg" class="certificate-img img-fluid" alt="Certificate">                      
+                    <p class="badge-title">Introduction to Cybersecurity</p>
+                    <p class="badge-date">Issued by: Network Academy<br>Issued: 01 Feb 2025</p>
+                </div>
+            </div>
+
+            <!-- BADGES -->
+            <div class="col-12 col-md-5">
+             <div class="badge-container d-flex flex-column align-items-center">
+                 
+                    <div class="badge-card glassmorphism mb-3 mb-md-0">
+                        <img src="img/badge.png" class="badge-img img-fluid" alt="Badge 1">
+                        <p class="badge-title">Verified Badge</p>
+                        <p class="badge-date">Issued: 01 Feb 2025</p>
+                    </div>
+                    
+                    <div class="badge-card glassmorphism">
+                        <img src="img/achieve.jpg" class="badge-img img-fluid" alt="Badge 2">
+                        <p class="badge-title">Cisco Packet Tracer</p>
+                        <p class="badge-date">Issued: 22 Mar 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+<!-- FOOTER START -->
+<footer class="footer-section py-5 mt-5">
+  <div class="container">
+
+    <div class="row gy-4 align-items-center">
+      
+      <!-- ABOUT -->
+      <div class="col-md-4 text-center text-md-start">
+        <h5 class="fw-bold mb-2">Jennel Tengcang</h5>
+        <p class="text-muted small mb-0">
+          Front-End Developer & UI Designer focused on clean,
+          user-friendly interfaces.
+        </p>
+      </div>
+
+      <!-- NAV LINKS -->
+      <div class="col-md-4 text-center">
+        <ul class="list-unstyled d-flex justify-content-center gap-4 mb-0">
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#designs" class="footer-link">Designs</a></li>
+          <li><a href="about/about.html" class="footer-link">About</a></li>
+          <li><a href="contact/contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- SOCIAL LINKS -->
+      <div class="col-md-4 text-center text-md-end">
+        <div class="d-flex justify-content-center justify-content-md-end gap-3">
+          <a href="https://github.com/jennelhttp" class="footer-icon">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jennel-tengcang-10b36b359" class="footer-icon">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="mailto:sc.jennel.tengcang@cvsu.edu.ph" class="footer-icon">
+            <i data-lucide="mail"></i>
+          </a>
+          <a href="tel:+639928632224" class="footer-icon">
+        <i data-lucide="send"></i>
+      </a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <hr class="my-4">
+    <!-- COPYRIGHT -->
+    <div class="text-center text-muted small">
+      © 2026 Jennel Tengcang. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+<!-- FOOTER END -->
+
+
+
+ <!-- LUCIDE ICONS -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js">
+</script>
+
+<script>
+    lucide.createIcons();
+</script>  
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
